@@ -1,0 +1,10 @@
+PomBase Loader
+==============
+
+The pombase-loader handles the procession of monthly PomBase release cycle.
+
+All of the scripts have a wrapper located in the scripts directory that should be run as per the Confluence PomLoader SOP [ http://www.ebi.ac.uk/seqdb/confluence/display/EnsGen/PomLoader+SOP ]
+
+Ensure that the SetEnv configurtion file is created in the base checkout directory (i.e. where this README is located). Details about its contents are listed in step 00 of the PomLoader SOP.
+
+As part of running the pipeline a directory called data/ will be created in teh base checkout directory.   This is where all dump files for the FTP, SQL files that are required to update the db are placed, backups are created.   All the wrapper scripts ensure that this folder and the required sub-folders are in place before the scripts are run.

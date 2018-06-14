@@ -1,0 +1,6 @@
+SetEnv*
+data
+data/*
+.includepath
+.project
+*~
